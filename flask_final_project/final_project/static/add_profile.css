@@ -1,0 +1,15 @@
+body{background-color:black;
+    font-family:Times New Roman;}
+div{background-color:black;
+    color: white;
+    width: 350px;
+    border: solid white;
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+    position:relative;
+    left:29%;}
+h1{color:white;
+    text-align:center;
+    position:relative;}
+

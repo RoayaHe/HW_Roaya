@@ -3,7 +3,7 @@ import re
 #Part1
 with open("original text.txt", "w+") as file:
     file.write("'Puackich, hvhnkrally oaths phufhck. All ymr nhhd is Pykemn.'\n")
-    file.write("j.u.u.u Kmltin.\n")
+    file.write("J.U.U.U Kmltin.\n")
     file.write("mmps iks nmk eio; ---> hkmu\n")
     file.seek(0)
     read_lines = file.read()
@@ -40,7 +40,7 @@ print(common_letter(read_lines))
 #Part2
 dictt = common_letter(textt)
 def SwipeLetters(textt):
-    textt = read_lines
+    text = read_lines
     for key in dictt:
         key = key.lower()
         text = text.replace(key, dictt[key])

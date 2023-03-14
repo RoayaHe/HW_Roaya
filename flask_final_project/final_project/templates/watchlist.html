@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watchlist</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+<body>
+<a href="/"><img src="../static/logo.jpg" style="width:5%;"></a>
+<h1>My Watchlist</h1>
+<div>
+    {%for movie in movie_watchlist%}
+    <a href="{{url_for('movie_info', movie_id=movie.id)}}" class="container"><img src="{{url_for('display_image', filename=movie.filename)}}" class="image"> </a>
+    {%endfor%}
+</div>
+</body>
+</html>

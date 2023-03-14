@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies Data Management</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='add_profile.css')}}">
+<body>
+<a href="/"><img src="../static/logo.jpg" style="width:5%;"></a>
+<h1 style="text-align:center;"><label>Add Movie</label></h1>
+<div>
+<form action="/add" method="post" enctype="multipart/form-data">
+  <dl>
+    <label>Poster Upload ..</label></br>
+    <p>
+    <input type="file" name="filename" required style="text-align:center;">
+    </p>
+  </dl>
+  <label>Movie Title:</label></br>
+  <input type="text" name="movie_title" required></br>
+  <label>Description:</label></br>
+  <textarea type="text" name="description" required></textarea></br>
+  <label>Director:</label></br>
+  <input type="text" name="director" required></br>
+  <label>Release Year:</label></br>
+  <input type="number" name="release_year" required><br>
+  <label>Cast:</label></br>
+  <textarea type="text" name="main_actors" required></textarea><br>
+  <label>Proper age:</label></br>
+  <input type="text" name="proper_age" required><br>
+  <label>Budget:</label></br>
+  <input type="text" name="budget" required><br>
+  <label>Genre:</label></br>
+  <input type="text" name="genre" required><br>
+  <label>Duration:</label></br>
+  <input type="text" name="duration" required><br>
+  <label>Trailer link:</label></br>
+  <input type="text" name="video" required></br>
+  <button type="submit">Add Movie</button>
+</form>
+</div>
+</body>
+</html>
